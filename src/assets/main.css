@@ -1,0 +1,18 @@
+@import './base.css';
+
+#app {
+  min-height: 100vh;
+}
+
+.page-shell {
+  width: min(var(--page-max-width), calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.page-section + .page-section {
+  margin-top: 24px;
+}
+
+.ant-layout {
+  background: transparent;
+}
