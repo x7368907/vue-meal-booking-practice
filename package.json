@@ -1,5 +1,5 @@
 {
-  "name": "project",
+  "name": "frontend-interview-skeleton",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -9,12 +9,15 @@
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
-    "format": "oxfmt src/"
+    "format": "oxfmt src/ docs/"
   },
   "dependencies": {
+    "@ant-design/icons-vue": "^7.0.1",
     "ant-design-vue": "4.2.6",
     "axios": "^1.14.0",
-    "vue": "^3.5.30"
+    "pinia": "^3.0.3",
+    "vue": "^3.5.30",
+    "vue-router": "^4.5.1"
   },
   "devDependencies": {
     "@tsconfig/node24": "^24.0.4",

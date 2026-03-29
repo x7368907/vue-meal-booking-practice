@@ -1,0 +1,146 @@
+import type { BuffetPageResponse } from '@/types/buffet'
+
+export const buffetMockData: BuffetPageResponse = {
+  locationOptions: [
+    {
+      label: '大成台南總部',
+      value: 'tainan-hq',
+    },
+    {
+      label: '台北辦公室',
+      value: 'taipei-office',
+    },
+  ],
+  defaultLocation: 'tainan-hq',
+  defaultDiningDate: '2026-02-02',
+  cutoffLines: [
+    '早餐：前日17:00',
+    '午餐：前日17:00',
+    '下午茶：當日10:00',
+    '晚餐：當日10:00',
+    '宵夜：當日17:00',
+  ],
+  sections: [
+    {
+      id: '2026-02-02',
+      date: '2026-02-02',
+      displayDate: '02/02 (一)',
+      status: 'unpublished',
+      message: '尚未公布菜色。',
+      meals: [],
+    },
+    {
+      id: '2026-02-03',
+      date: '2026-02-03',
+      displayDate: '02/03 (二)',
+      status: 'available',
+      meals: [
+        {
+          id: 'BUF-20260203-LUNCH',
+          mealPeriod: '午餐',
+          name: '炒麵、蔥爆牛肉、炒空心菜、茶碗蒸、西瓜',
+          description: '現炒主食搭配兩樣熱菜與水果。',
+          price: 120,
+          quantityLimit: 20,
+          tone: 'lunch',
+          dateLabel: '2026/02/03 (二)',
+          timeRange: '11:00-13:30',
+        },
+        {
+          id: 'BUF-20260203-DINNER',
+          mealPeriod: '晚餐',
+          name: '炒麵、蔥爆牛肉、炒空心菜、茶碗蒸、西瓜',
+          description: '晚餐供應內容與午餐相近。',
+          price: 120,
+          quantityLimit: 20,
+          tone: 'dinner',
+          dateLabel: '2026/02/03 (二)',
+          timeRange: '17:00-19:00',
+        },
+      ],
+    },
+    {
+      id: '2026-02-04',
+      date: '2026-02-04',
+      displayDate: '02/04 (三)',
+      status: 'available',
+      meals: [
+        {
+          id: 'BUF-20260204-LUNCH',
+          mealPeriod: '午餐',
+          name: '炒麵、蔥爆牛肉、炒空心菜、茶碗蒸、西瓜',
+          description: '主餐與配菜完整供應。',
+          price: 120,
+          quantityLimit: 20,
+          tone: 'lunch',
+          dateLabel: '2026/02/04 (三)',
+          timeRange: '11:00-13:30',
+        },
+        {
+          id: 'BUF-20260204-TEA',
+          mealPeriod: '下午茶',
+          name: '麵條、杯子蛋糕',
+          description: '簡單點心與熱飲搭配。',
+          price: 80,
+          quantityLimit: 20,
+          tone: 'tea',
+          dateLabel: '2026/02/04 (三)',
+          timeRange: '14:00-17:00',
+        },
+        {
+          id: 'BUF-20260204-DINNER',
+          mealPeriod: '晚餐',
+          name: '炒麵、蔥爆牛肉、炒空心菜、茶碗蒸、西瓜',
+          description: '晚餐供應完整熱食。',
+          price: 120,
+          quantityLimit: 20,
+          tone: 'dinner',
+          dateLabel: '2026/02/04 (三)',
+          timeRange: '17:00-19:00',
+        },
+      ],
+    },
+    {
+      id: '2026-02-05',
+      date: '2026-02-05',
+      displayDate: '02/05 (四)',
+      status: 'suspended',
+      meals: [],
+      notices: [
+        {
+          mealPeriod: '午餐',
+          message: '總部股東會，暫停供餐。',
+        },
+        {
+          mealPeriod: '晚餐',
+          message: '總部股東會，暫停供餐。',
+        },
+      ],
+    },
+    {
+      id: '2026-02-06',
+      date: '2026-02-06',
+      displayDate: '02/06 (五)',
+      status: 'available',
+      notices: [
+        {
+          mealPeriod: '午餐',
+          message: '總部股東會，暫停供餐。',
+        },
+      ],
+      meals: [
+        {
+          id: 'BUF-20260206-DINNER',
+          mealPeriod: '晚餐',
+          name: '炒麵、蔥爆牛肉、炒空心菜、茶碗蒸、西瓜',
+          description: '晚餐正常供應。',
+          price: 120,
+          quantityLimit: 20,
+          tone: 'dinner',
+          dateLabel: '2026/02/06 (五)',
+          timeRange: '17:00-19:00',
+        },
+      ],
+    },
+  ],
+}
